@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+	<title>Sitio con responsive WEB desing en HTML5, CSS3 y jQuery</title>
+	
+	<meta charset="utf-8"/>
+	
+	<meta name="description" content="Bienvenido a mi portafolioWen hecho en HTML5, 			CSS3 y jQuery, con responsive WEB desing"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<link rel="shortcut icon" type="image/z-icon" href="favicon.ico"/>
+
+	<link rel="author" type="text/plain" href="humans.txt"/>
+
+	<link rel="stylesheet" href="css/flexslider.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+			$(window).load(function(){
+				$(".flexslider").flexslider();
+			});
+	</script>
+
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js" ></script>
+
+	<script type="text/javascript" src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+	
+	<!--[if it IE 9]>
+		<SCRIPT TYPE="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></SCRIPT>
+	<![endif]-->
+
+</head>
+
+<body>
+	<header>
+		<h1>
+			<a HREF="index.html">
+				<img class="fade" alt="bextlan.com | lugar de bits, vectores y pixeles" src="img/bextlan-logo.png"/>
+			</a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="acerca.html">Acerca</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="trabajos.html">Trabajos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+		<section id="contenido">
+			<section id="principal">
+				<article id="galeria-inicio">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<a href="http://bestrealty.com.mx"><img src="img/slide-0.png"/></a>
+								<p class="flex-caption">Bestrealty.com.mx</p>
+							</li>
+							<li>
+								<img src="img/slide-1.png"/>
+								<p class="flex-caption">Otra descripc&iacute#on</p>
+							</li>
+							<li>
+								<img src="img/slide-2.png"/>
+								<p class="flex-caption">Otra descripc&iacute#on</p>
+							</li>
+							<li>
+								<a href="http://bestrealty.com.mx"></a><img src="img/slide-3.png"/>
+								<p class="flex-caption">Otra descripc&iacute#on</p>
+							</li>
+
+
+						</ul>
+					</div>
+				</article>
+
+			</section>
+
+			<aside>
+				<!-- Twitter  Nota: data-count="vertical-->
+				
+				<a id="caja-twitter" width="250" height="" class="twitter-timeline" href="https://twitter.com/siserin" data-widget-id="279384494178435072" data-show-screen-name="false" scrolling="no" data-dnt="true">Tweets por @siserin</a>
+				<br/>
+				<!-- Facebook -->
+				<div id="fb-root"></div>
+				<fb:like href="https://www.facebook.com/pages/Kikis-Boutique/202220569906399" send="false" layout="box_count" show-faces="false"></fb:like>
+				<!-- Publicidad -->
+			</aside>
+		</section>
+	<footer>
+		HTML5, CSS3, jQuery y Responsive Web Desing <a rel="author" href="http://twitter.com/siserin" target="_blank">@siserin</a>
+	</footer>
+
+</body>
+
+</html>
