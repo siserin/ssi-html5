@@ -2,3 +2,4 @@ $ cat .gitignore
 
 *.zip
 *.rar
+video06-html5/
