@@ -4,53 +4,115 @@
 
 <head>
 
-	<title>Sitio con responsive WEB desing en HTML5, CSS3 y jQuery</title>
+
+
+	<title>Sitio web de Kikis boutiques</title>
 	
 	<meta charset="utf-8"/>
 	
-	<meta name="description" content="Bienvenido a mi portafolioWen hecho en HTML5, CSS3 y jQuery, con responsive WEB desing"/>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="Bienvenido a Kikis boutique"/>
+<!--
+	<meta name="viewport" content="width=device-width; initial-scale=1"/>
+-->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	
 	<link rel="shortcut icon" type="image/z-icon" href="favicon.ico"/>
 
 	<link rel="author" type="text/plain" href="humans.txt"/>
 
-	<link rel="stylesheet" href="css/flexslider.css"/>
-
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+<!--
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+-->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript">
-			$(window).load(function(){
-				$(".flexslider").flexslider();
-			});
+<!--
+	<script src="js/jquery.js"></script>
+-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write("<script src='js/jquery.js' type='text/javascript' charset='utf-8' async defer><\/script>");
 	</script>
+
+	<script src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<!--
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+	</script>
+-->
+<!--
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+-->
 
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js" ></script>
 
 	<script type="text/javascript" src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]--> 
+
+<!-- html5.js - IE 9 -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE - 9 -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
 	
-	<!--[if it IE 9]>
-		<SCRIPT TYPE="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></SCRIPT>
-	<![endif]-->
+	
+
 
 </head>
 
 <body>
 	<header>
 		<h1>
-			<a HREF="index.html">
-				<img class="fade" alt="bextlan.com | lugar de bits, vectores y pixeles" src="img/bextlan-logo.png"/>
+			<a href="index.html">
+				<img class="fade" alt="kikisboutiques.com | moda" src="img/logo.png"/>
 			</a>
 		</h1>
 		<nav>
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="acerca.html">Acerca</a></li>
-				<li><a href="servicios.html">Servicios</a></li>
-				<li><a href="trabajos.html">Trabajos</a></li>
+				<li><a href="acerca.html">Tiendas</a></li>
+				<li><a href="servicios.html">Moda</a></li>
+				<li><a href="trabajos.html">Opini&oacute;n</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
@@ -61,33 +123,68 @@
 					<div class="flexslider">
 						<ul class="slides">
 							<li>
-								<a href="http://bestrealty.com.mx"><img src="img/slide-0.png"/></a>
-								<p class="flex-caption">Bestrealty.com.mx</p>
+								<a href="http://kikisboutiques.com">
+									<img src="img/001.jpg"/>
+								</a>
+								<p class="flex-caption">kikisboutiques.com</p>
 							</li>
 							<li>
-								<img src="img/slide-1.png"/>
-								<p class="flex-caption">Otra descripc&iacute#on</p>
+								<a href="http://kikisboutiques.com">
+									<img src="img/003.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
 							</li>
 							<li>
-								<img src="img/slide-2.png"/>
-								<p class="flex-caption">Otra descripc&iacute#on</p>
+								<a href="http://kikisboutiques.com">
+									<img src="img/004.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
 							</li>
 							<li>
-								<a href="http://bestrealty.com.mx"></a><img src="img/slide-3.png"/>
-								<p class="flex-caption">Otra descripc&iacute#on</p>
+								<a href="http://kikisboutiques.com">
+									<img src="img/005.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
 							</li>
-
-
+							<li>
+								<a href="http://kikisboutiques.com">
+									<img src="img/006.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
+							</li>
+							<li>
+								<a href="http://kikisboutiques.com">
+									<img src="img/007.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
+							</li>
+							<li>
+								<a href="http://kikisboutiques.com">
+									<img src="img/008.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
+							</li>
+							<li>
+								<a href="http://kikisboutiques.com">
+									<img src="img/009.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
+							</li>
+							<li>
+								<a href="http://kikisboutiques.com">
+									<img src="img/010.jpg"/>
+								</a>
+								<p class="flex-caption">Otra descripc&iacute;on</p>
+							</li>
 						</ul>
 					</div>
 				</article>
-
 			</section>
 
 			<aside>
 				<!-- Twitter  Nota: data-count="vertical-->
-				
-				<a id="caja-twitter" width="250" height="" class="twitter-timeline" href="https://twitter.com/siserin" data-widget-id="279384494178435072" data-show-screen-name="false" scrolling="no" data-dnt="true">Tweets por @siserin</a>
+				<br/>
+				<a id="caja-twitter" width="250" height="" class="twitter-timeline" href="https://twitter.com/siserin" data-widget-id="279384494178435072">Tweets por @siserin</a>
 				<br/>
 				<!-- Facebook -->
 				<div id="fb-root"></div>
@@ -95,7 +192,7 @@
 				<!-- Publicidad -->
 			</aside>
 		</section>
-	<footer>
+	<footer aling="center">
 		HTML5, CSS3, jQuery y Responsive Web Desing <a rel="author" href="http://twitter.com/siserin" target="_blank">@siserin</a>
 	</footer>
 

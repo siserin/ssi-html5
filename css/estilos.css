@@ -44,7 +44,7 @@ body {
 	}
 
 a {
-	color: #57ABB8;
+	color: #c32c85;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -76,6 +76,10 @@ header h1, nav{
 	vertical-align: middle;
 }
 
+header h1{
+		text-align: left;
+	}
+
 nav ul{
 	list-style: none;
 }
@@ -89,12 +93,12 @@ nav li{
 
 	/* -ms- (Iexplorer), -mos-(Morsilla), -o-(Opera), -webkit-(Chome) */
 nav a{
-	background: #FFF;
-	border: 0.1em solid #57ABB8;
+	background: #c32c85;
+	border: 0.1em solid #c32c85;
 	border-radius: 0.25em;
-	color: #F60;
+	color: #FFF;
 	display: block;
-	font-family: "Pecita", Helvetica, Verdana;
+	font-family: "Chalet", Helvetica, Verdana;
 	font-size: 1.4em;
 	padding: 0.2em;
 	-ms-transition: all 0.5s ease-in;
@@ -105,26 +109,25 @@ nav a{
 
 }
 
+		/* border: 0.1em dashed #f60; */
 nav a:hover{
-	background: #212121;
-	border: 0.1em dashed #f60;
+	background: #FFF;
+	border: 0.1em solid #c32c85;
 	border-radius: 0 0.5em 0 0.5em;
-	color: #FFF;
+	color: #c32c85;
 	-ms-transition: all 0.5s ease-out;
 	-mos-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
-
-
 }
 
 section#principal, aside{
-	background: #1B6381;
+	background: #c32c85;
 	border-radius: 0.5em;
 	display: inline-block;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 95%;
 	padding: 0.25em;
 	vertical-align: top;
 	width: 65%;
@@ -146,10 +149,13 @@ aside img{
 	border-radius: 0.5em;
 }
 
+/*
 aside a#twitter-timeline{
 	border-radius: 0.5em;
 	max-width: 20%;
 }
+
+*/
 
 footer{
 	color: #000;
@@ -182,7 +188,9 @@ footer{
 		text-align: left;
 		width: 35%;
 	}
-
+	nav li{
+		font-size: 1em;
+	}
 	nav{
 		text-align: right;
 		width: 60%;
@@ -190,8 +198,11 @@ footer{
 }
 
 @media(max-width: 960px){
+	header h1{
+		text-align: left;
+	}
 	nav li{
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 
 	article#galeria-inicio{
@@ -204,6 +215,9 @@ footer{
 }
 
 @media(max-width: 800px){
+	header h1{
+		text-align: left;
+	}
 	nav li{
 		font-size: 0.95em;
 	}
@@ -214,10 +228,13 @@ footer{
 }
 
 @media(max-width: 600px){
+	header h1{
+		text-align: left;
+	}
 	nav li{
 		display: inline-block;
 		margin: 0px;
-		width: 98%;
+		width: 90%;
 	}
 
 	section#principal{
